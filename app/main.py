@@ -10,7 +10,7 @@ def main():
             print("Available commands:")
             print("help - display this help message")
             print("quit - exit the shell")
-        elif command == "quit":
+        elif command == "exit":
             sys.exit(0)
         else:
             print(f"{command}: command not found")

@@ -1,8 +1,18 @@
+from imaplib import Commands
 import sys
 
 
 def main():
     sys.stdout.write("$ ")
+    command = input()
+    if command == "help":
+        print("Available commands:")
+        print("help - display this help message")
+        print("quit - exit the shell")
+    elif command == "quit":
+        sys.exit(0)
+    else:
+        print(f"{command}: command not found")
     pass
 
 

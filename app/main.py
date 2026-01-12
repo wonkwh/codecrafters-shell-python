@@ -10,6 +10,10 @@ def main():
             print("Available commands:")
             print("help - display this help message")
             print("quit - exit the shell")
+        elif command.__contains__("echo"):
+            # split command space arguments
+            args = command.split(" ")
+            print(" ".join(args[1:]))
         elif command == "exit":
             sys.exit(0)
         else:

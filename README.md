@@ -32,3 +32,10 @@ Note: This section is for stages 2 and beyond.
    `app/main.py`.
 1. Commit your changes and run `git push origin master` to submit your solution
    to CodeCrafters. Test output will be streamed to your terminal.
+
+## python knowledge
+## Locate executable files
+- 쉘에서 ‎`PATH="..." ./your_program.sh` 로 실행하면, 그 PATH는 자식 프로세스(Python 프로그램)의 환경변수로 전달
+- Python에서는 ‎`os.environ["PATH"]` 또는 ‎`os.getenv("PATH")` 로 
+- 디렉터리 목록으로 나누려면 ‎`path_value.split(os.pathsep)` 를 사용
+- `None`을 체크할 때는 항상 ‎`is` / ‎`is not` 을 사용
